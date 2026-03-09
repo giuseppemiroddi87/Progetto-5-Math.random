@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>DevSorteggio</title>
+</head>
+
+<body>
+     <video autoplay muted loop playsinline id="bg-video">
+        <source src="./assets/bg-video.mp4" type="video/mp4">
+        Il tuo browser non supporta il video.
+    </video>
+    <img src="./assets/sort 1.png">
+
+
+    <h2>Sorteggia un numero</h2>
+    <div>
+        <input class="input-min" placeholder="Fra" type="number">
+        <input class="input-max" placeholder="E" type="number">
+         <p>Il tuo numero casuale è: <span id="risultatoCasella"></span></p>
+    <input type="text" id="altroCampo" readonly>
+    </div>
+
+    <button onclick="generateNUmber()"> Sorteggia </button>
+
+</body>
+<script src="./script.js"></script>
+
+</html>
